@@ -1,0 +1,8 @@
+-
+  name: install a web server
+  hosts: all
+  tasks:
+      - name: install sql server
+        yum: name='{{ item }}' state=present
+        with_items:
+            - mysql-server

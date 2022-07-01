@@ -1,0 +1,6 @@
+-
+  name: run ping test on target server
+  hosts: all
+  tasks:
+    - name: Run ping test
+      ping:
